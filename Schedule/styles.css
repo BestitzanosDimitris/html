@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+button{
+    width: 40%;
+    margin: 5px 0 25px;
+}
+.btn{
+    background-color: #098bdc;
+    color: #fff;
+    font-size: 19px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    border-bottom: 4px solid #0a9bf5;
+    cursor:pointer;
+}
+.btn:hover, .btn:focus{
+    background-color: #098bdc!important;
+    border-bottom: 4px solid #098bdc!important;
