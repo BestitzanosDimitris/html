@@ -39,14 +39,14 @@ body {
     content: "\f023";
 }
 button{
-    width: 40%;
+    width: 60%;
     margin: 5px 0 25px;
 }
 .btn{
     background-color: #098bdc;
     color: #fff;
     font-size: 19px;
-    padding: 7px 14px;
+    padding: 10px 20px;
     border-radius: 5px;
     border-bottom: 4px solid #0a9bf5;
 }
