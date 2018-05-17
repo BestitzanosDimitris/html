@@ -4,10 +4,19 @@ body {
     font-family: 'Roboto', sans-serif;
     background: url(img/background.jpg) no-repeat center center fixed;
     background-size: cover;
+    font-family: 'Roboto', sans-serif;
+	height: auto;
+	overflow-y: hidden;
+	max-width: 100%;
+    overflow-x: hidden;
 }
 .main-section{
     margin: 0 auto;
-    margin-top: 130px;
+    align-self: center;
+    margin-top: 10%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     padding: 0;
 }
 
@@ -38,7 +47,7 @@ h1,h2{
 }
 .form-group::before{
     font-family: 'Font Awesome\ 5 free';
-    content: "\f007";
+    content: "\e008";
     position: absolute;
     font-size: 22px;
     color: #555e60;
@@ -46,7 +55,7 @@ h1,h2{
     padding-top: 4px;
 }
 .form-group:last-of-type::before{
-    content: "\f023";
+    content:"\e033";
 }
 button{
     width: 60%;
