@@ -19,20 +19,20 @@
     <![endif]-->
   </head>
   <body>
-
+<!--...................................................navbar.................................................................-->
 	<nav class="navbar navbar-default">
 	  <div class="container-fluid">
 		<div class="navbar-header">
 		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span>
-			<span class="icon-bar"></span
+			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		  </button>
-		  <a class="navbar-brand" href="#"><img id="brand-image" src="img/logo.gif"></a>
+		  <a class="navbar-brand" href="#"><img id="brand-image" src="img/logo.gif" alt="Αποτυχία φόρτωσης εικόνας"></a>
 		</div>
 
-		<!------------------------------------------------------------------------------------------------------------------------------>
+		<!--....................................................................................................................-->
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -40,7 +40,7 @@
 			<li class="dropdown">
 			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Αίτηση ανταλλαγής <span class="caret"></span></a>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Ανταλλαγή Βάρδιας</a></li>
+				<li><a href="#">Ανταλλαγή βάρδιας</a></li>
 				<li><a href="#">Ανταλλαγή άδειας</a></li>
 			  </ul>
 			</li>
@@ -55,14 +55,14 @@
 			  </ul>
 			</li>
 		  </ul>
-<!-- ...................................................................................................................-->
+
 <!-- ...................................................................................................................-->
 		  <ul class="nav navbar-nav navbar-right">
 			<li class="dropdown">
 			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ειδοποιήσεις <span class="caret"></span></a>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Αλλαγές βαρδιών <span class="badge">3</a></li>
-				<li><a href="#">Αλλαγές αδειών <span class="badge">1</a></li>
+				<li><a href="#">Αλλαγές βαρδιών <span class="badge">3</span></a></li>
+				<li><a href="#">Αλλαγές αδειών <span class="badge">1</span></a></li>
 			  </ul>
 			</li>
 		  </ul>
@@ -70,36 +70,45 @@
 		</div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
-
+<!--.....................................................user...............................................................-->
 	<div class="row" id="user">
-		<div class="col-sm-11"><h5> Χρήστης: Παναγιώτης Αλεξάνδρου, Νοσηλευτής</h5></div>
+		<div class="col-sm-11"><h4><span class="label label-info"> Χρήστης: Παναγιώτης Αλεξάνδρου, Νοσηλευτής</span></h4></div>
 		<div class="col-sm-1">
-			<div class="btn-group">
-				<button type="button" class="btn btn-default btn-sm">Αποσύνδεση</button>
-			</div>
+            <form action="login-pan.html">
+                <button type="submit" class="btn btn-default btn-sm"><i class="fas fa-sign-in-alt"></i>Αποσύνδεση</button>
+            </form>
 		</div>
 	</div>
-
-	<div class="container-fluid">
-	<ul class="nav nav-tabs">
-		<div class="col-sm-6">
-			<li role="presentation"><a href="#">Τρέχον Πρόγραμμα</a></li>
-
-
-
-		</div>
-		<div class="col-sm-6">
-			<li role="presentation"><a href="#">Επερχόμενο Πρόγραμμα </a></li>
-		</div>
-
-
-	</ul>
+    <!--...................................................pills.........................................................-->
+	<div class="container">
+        <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#" data-toggle="tab">Τρέχον Πρόγραμμα Βαρδιών</a></li>
+                <li><a href="#" data-toggle="tab">Επερχόμενο Πρόγραμμα Βαρδιών</a></li>
+                <li><a href="#" data-toggle="tab">Ρεπό</a></li>
+            </ul>
 	</div>
+    <div class="tab-content">
+        <div class="tab-pane fade in active"  id="Home">
+        
+        </div>
 
+        <div class="tab-pane fade" id="Next">
 
-    <!---------------------------table--------------------------->
-    <div class="lowerspace">
-        <table class="fixed" style="width: auto" align="center" border-radius="10px" -moz-border-radius="10px" -webkit-border-radius="10px">
+        </div>
+
+        <div class="tab-pane fade" id="Off">
+            
+        </div>
+
+    </div>
+
+    <!--........................................................table.................................................................-->
+    <!--Δημητρης css
+        style="width: auto" align="center" border-radius="10px" -moz-border-radius="10px" -webkit-border-radius="10px"
+
+    -->
+    <div class="table-responsive">
+        <table class="table">
             <tr>
                 <th>Βάρδια</th>
                 <th>Δευ,28 Μαΐου</th>
@@ -112,7 +121,7 @@
             </tr>
 
             <tr>
-                <td>Πρωινή&#13;&#10;(07:00-15:00)</td>
+                <td>Πρωινή<p> (07:00-15:00) </p></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -123,7 +132,7 @@
             </tr>
 
             <tr>
-                <td>Μεσημεριανή&#13;&#10;(15:00-23:00)</td>
+                <td>Απογευματινή<p> (15:00-23:00) </p></td>
                 <td><span class="glyphicon glyphicon-ok"></span></td>
                 <td></td>
                 <td><span class="glyphicon glyphicon-ok"></span></td>
@@ -134,7 +143,7 @@
             </tr>
 
             <tr>
-                <td>Βραδινή&#13;&#10;(23:00-07:00)</td>
+                <td>Βραδινή<p> (23:00-07:00) </p></td>
                 <td></td>
                 <td><span class="glyphicon glyphicon-ok"></span></td>
                 <td></td>
@@ -143,7 +152,9 @@
                 <td></td>
                 <td><span class="glyphicon glyphicon-ok"></span></td>
             </tr>
-    </div>
+        </table>
+    </div>   
+
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
