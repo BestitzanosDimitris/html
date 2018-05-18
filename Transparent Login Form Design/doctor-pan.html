@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Ιατρός-Χειρουργός</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="styling.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- ...................................................Nav................................................................-->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#"><img id="brand-image" src="img/logo.gif" alt="Αποτυχία φόρτωσης εικόνας"></a>
+		</div>
+		
+
+		
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  
+		  <ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Εισαγωγή νέου περιστατικού<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Προγραμματισμένο </a></li>
+					<li><a href="#">Επείγον </a></li>
+				</ul>
+			</li>
+		  </ul>
+
+		  <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Αξιολόγηση περιστατικού <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Τροποποίηση αξιολόγησης περιστατικού </a></li>
+						<li><a href="#">Αξιολόγηση μη αξιολογημένου περιστατικού </a></li>
+					</ul>
+				</li>
+		  </ul>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- ...................................................Info................................................................-->
+
+	<div class="row" id="user">
+		<div class="col-sm-11"><h4><span class="label label-info"> Χρήστης: Γεώργιος Παυλίδης, Χειρουργός-Ουρολόγος</span></h4></div>
+		<div class="col-sm-1">
+ 			<form action="doc-login.html">
+                <button type="submit" class="btn btn-default btn-sm"><i class="fas fa-sign-in-alt"></i>Αποσύνδεση</button>
+            </form>
+		</div>
+	</div>
+	
+	<!-- ....................................................Pills...............................................................-->
+
+	<div class="container">
+        <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#" data-toggle="tab">Τρέχον Πρόγραμμα Προγραμματισμένων Χειρουργείων</a></li>
+                <li><a href="#" data-toggle="tab">Επερχόμενο Πρόγραμμα Προγραμματισμένων Χειρουργείων</a></li>
+            </ul>
+	</div>
+	<div class="tab-content">
+		<div class="tab-pane fade in active"  id="sur-now">
+        
+        </div>
+
+        <div class="tab-pane fade" id="sur-next">
+            
+        </div>
+	</div>
+
+
+	<!-- ....................................................Surgeries...............................................................-->
+	<div class="table-responsive">
+        <table class="table">
+            <tr>
+                <th>Δευ,28 Μαΐου</th>
+                <th>Τρί,29 Μαΐου</th>
+                <th>Τετ,30 Μαΐου</th>
+                <th>Πεμ,1 Ιουνίου</th>
+                <th>Παρ,2 Ιουνίου</th>
+                <th>Σαβ,3 Ιουνίου</th>
+                <th>Κυρ,4 Ιουνίου</th>
+            </tr>
+
+            <tr>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18A-JC145</a></p>
+                	<p>Τύπος Περιστατικού: Νεφροκτομή
+                	<p>Ασθενής: Παπαδόπουλος Ι. (18/07/1954) </p>
+                	<p>Δυσκολία: <span class="badge">8</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18D-LK318</a></p>
+                	<p>Τύπος Περιστατικού: Κυστεολιθοτριψία
+                	<p>Ασθενής: Γεωργίου X. (08/04/1978) </p>
+                	<p>Δυσκολία: <span class="badge">-</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18C-AM012</a></p>
+                	<p>Τύπος Περιστατικού: Αυχενοτομή
+                	<p>Ασθενής: Nassim J. (24/06/1989) </p>
+                	<p>Δυσκολία: <span class="badge">4</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18A-OP099</a></p>
+                	<p>Τύπος Περιστατικού: Σφυγκτήρας
+                	<p>Ασθενής: Ιωαννίδης Λ. (30/10/1958) </p>
+                	<p>Δυσκολία: <span class="badge">6</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18A-OP0100</a></p>
+                	<p>Τύπος Περιστατικού: Σφυγκτήρας
+                	<p>Ασθενής: Χαριλάου Γ. (02/11/1950) </p>
+                	<p>Δυσκολία: <span class="badge">-</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18A-JC146</a></p>
+                	<p>Τύπος Περιστατικού: Νεφροκτομή
+                	<p>Ασθενής: Παπαδόπουλος Π. (15/03/1968) </p>
+                	<p>Δυσκολία: <span class="badge">5</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18C-AM013</a></p>
+                	<p>Τύπος Περιστατικού: Σφυγκτήρας
+                	<p>Ασθενής: Καλαφάτης Ν. (12/09/1974) </p>
+                	<p>Δυσκολία: <span class="badge">4</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18W-QS043</a></p>
+                	<p>Τύπος Περιστατικού: Ορχεκτομή
+                	<p>Ασθενής: Ξενίδης Φ. (13/05/1964) </p>
+                	<p>Δυσκολία: <span class="badge">8</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18A-JC147</a></p>
+                	<p>Τύπος Περιστατικού: Νεφροκτομή
+                	<p>Ασθενής: Νικολάου Ι. (01/01/1955) </p>
+                	<p>Δυσκολία: <span class="badge">7</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18C-AM015</a></p>
+                	<p>Τύπος Περιστατικού: Αυχενοτομή
+                	<p>Ασθενής: Παπαπέτρου Ν. (04/07/1971) </p>
+                	<p>Δυσκολία: <span class="badge">4</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18C-AM022</a></p>
+                	<p>Τύπος Περιστατικού: Αυχενοτομή
+                	<p>Ασθενής: Αλεξάνδρου Χ. (04/12/1959) </p>
+                	<p>Δυσκολία: <span class="badge">4</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18A-OP105</a></p>
+                	<p>Τύπος Περιστατικού: Σφυγκτήρας
+                	<p>Ασθενής: Κετσίδης. (10/06/1968) </p>
+                	<p>Δυσκολία: <span class="badge">-</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18C-AM014</a></p>
+                	<p>Τύπος Περιστατικού: Σφυγκτήρας
+                	<p>Ασθενής: Κάτσε Α. (28/10/1978) </p>
+                	<p>Δυσκολία: <span class="badge">4</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18L-AM017</a></p>
+                	<p>Τύπος Περιστατικού: Αυχενοτομή
+                	<p>Ασθενής: Νούσης N. (09/04/1988) </p>
+                	<p>Δυσκολία: <span class="badge">4</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18D-LK321</a></p>
+                	<p>Τύπος Περιστατικού: Κυστεολιθοτριψία
+                	<p>Ασθενής: Gaje R. (24/12/1977) </p>
+                	<p>Δυσκολία: <span class="badge">-</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18D-LK322</a></p>
+                	<p>Τύπος Περιστατικού: Κυστεολιθοτριψία
+                	<p>Ασθενής: Παπανικολάου Β. (08/02/1962) </p>
+                	<p>Δυσκολία: <span class="badge">-</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18C-LP049</a></p>
+                	<p>Τύπος Περιστατικού: Ανοιχτή προστατεκρομή
+                	<p>Ασθενής: Balzar J. (02/02/1966) </p>
+                	<p>Δυσκολία: <span class="badge">-</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18C-AM019</a></p>
+                	<p>Τύπος Περιστατικού: Σφυγκτήρας
+                	<p>Ασθενής: Μάνος Σ. (28/10/1983) </p>
+                	<p>Δυσκολία: <span class="badge">3</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18C-LP056</a></p>
+                	<p>Τύπος Περιστατικού: Ανοιχτή προστατεκρομή
+                	<p>Ασθενής: Πετζόγλου Γ. (30/01/1954) </p>
+                	<p>Δυσκολία: <span class="badge">7</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+               
+            </tr>
+
+            <tr>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>Κωδικός Περιστατικού:<a href="#">18C-AM020</a></p>
+                	<p>Τύπος Περιστατικού: Σφυγκτήρας
+                	<p>Ασθενής: Ζάνης Χ. (18/02/1980) </p>
+                	<p>Δυσκολία: <span class="badge">-</span></p>
+                	<p><a href="#">Περισσότερες πληροφορίες</a></p>
+
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+                <td>
+                	<p>-</p>
+                </td>
+            </tr>
+
+        </table>
+    </div>   
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

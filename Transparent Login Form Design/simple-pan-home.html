@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Νοσηλευτικό Προσωπικό</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="styling.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<!--...................................................navbar.................................................................-->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#"><img id="brand-image" src="img/logo.gif" alt="Αποτυχία φόρτωσης εικόνας"></a>
+		</div>
+
+		<!--....................................................................................................................-->
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+		  <ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Αίτηση ανταλλαγής <span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Ανταλλαγή βάρδιας</a></li>
+				<li><a href="#">Ανταλλαγή άδειας</a></li>
+			  </ul>
+			</li>
+		  </ul>
+<!-- ...................................................................................................................-->
+		  <ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Δήλωση προτιμήσεων <span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Προτιμώμενη περίοδος άδειας</a></li>
+				<li><a href="#">Προτιμώμενες βάρδιες</a></li>
+			  </ul>
+			</li>
+		  </ul>
+
+<!-- ...................................................................................................................-->
+		  <ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ειδοποιήσεις <span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Αλλαγές βαρδιών <span class="badge">3</span></a></li>
+				<li><a href="#">Αλλαγές αδειών <span class="badge">1</span></a></li>
+			  </ul>
+			</li>
+		  </ul>
+
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+<!--.....................................................user...............................................................-->
+	<div class="row" id="user">
+		<div class="col-sm-11"><h4><span class="label label-info"> Χρήστης: Παναγιώτης Αλεξάνδρου, Νοσηλευτής</span></h4></div>
+		<div class="col-sm-1">
+            <form action="new-login.html">
+                <button type="submit" class="btn btn-default btn-sm"><i class="fas fa-sign-in-alt"></i>Αποσύνδεση</button>
+            </form>
+		</div>
+	</div>
+    <!--...................................................pills.........................................................-->
+	<div class="container">
+        <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#" data-toggle="tab">Τρέχον Πρόγραμμα Βαρδιών</a></li>
+                <li><a href="#" data-toggle="tab">Επερχόμενο Πρόγραμμα Βαρδιών</a></li>
+                <li><a href="#" data-toggle="tab">Ρεπό-Άδειες</a></li>
+            </ul>
+	</div>
+    <div class="tab-content">
+        <div class="tab-pane fade in active"  id="Home">
+        
+        </div>
+
+        <div class="tab-pane fade" id="Next">
+
+        </div>
+
+        <div class="tab-pane fade" id="Off">
+            
+        </div>
+
+    </div>
+
+    <!--........................................................table.................................................................-->
+    <!--Δημητρης css
+        style="width: auto" align="center" border-radius="10px" -moz-border-radius="10px" -webkit-border-radius="10px"
+
+    -->
+    <div class="table-responsive">
+        <table class="table">
+            <tr>
+                <th>Βάρδια</th>
+                <th>Δευ,28 Μαΐου</th>
+                <th>Τρί,29 Μαΐου</th>
+                <th>Τετ,30 Μαΐου</th>
+                <th>Πεμ,1 Ιουνίου</th>
+                <th>Παρ,2 Ιουνίου</th>
+                <th>Σαβ,3 Ιουνίου</th>
+                <th>Κυρ,4 Ιουνίου</th>
+            </tr>
+
+            <tr>
+                <td>Πρωινή<p> (07:00-15:00) </p></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Απογευματινή<p> (15:00-23:00) </p></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Βραδινή<p> (23:00-07:00) </p></td>
+                <td></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="glyphicon glyphicon-ok"></span></td>
+            </tr>
+        </table>
+    </div>   
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
