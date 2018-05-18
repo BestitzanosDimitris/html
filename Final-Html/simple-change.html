@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Νοσηλευτικό Προσωπικό Change</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="styling_simple.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<!--...................................................navbar.................................................................-->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#"><img id="brand-image" src="img/logo.gif" alt="Αποτυχία φόρτωσης εικόνας"></a>
+		</div>
+
+		<!--....................................................................................................................-->
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+		  <ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Αίτηση ανταλλαγής <span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Ανταλλαγή βάρδιας</a></li>
+				<li><a href="#">Ανταλλαγή άδειας</a></li>
+			  </ul>
+			</li>
+		  </ul>
+<!-- ...................................................................................................................-->
+		  <ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Δήλωση προτιμήσεων <span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Προτιμώμενη περίοδος άδειας</a></li>
+				<li><a href="#">Προτιμώμενες βάρδιες</a></li>
+			  </ul>
+			</li>
+		  </ul>
+
+<!-- ...................................................................................................................-->
+		  <ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ειδοποιήσεις <span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Αλλαγές βαρδιών <span class="badge">3</span></a></li>
+				<li><a href="#">Αλλαγές αδειών <span class="badge">1</span></a></li>
+			  </ul>
+			</li>
+		  </ul>
+
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+<!--.....................................................user...............................................................-->
+	<div class="row" id="user">
+		<div class="col-sm-11"><h4><span class="label label-info"> Χρήστης: Παναγιώτης Αλεξάνδρου, Νοσηλευτής</span></h4></div>
+		<div class="col-sm-1">
+            <form action="new-login.html">
+                <button type="submit" class="btn btn-default btn-sm"><i class="fas fa-sign-in-alt"></i>Αποσύνδεση</button>
+            </form>
+		</div>
+	</div>
+
+
+<!--.....................................................change...............................................................-->
+
+<h1><span class="label label-info">ΑΙΤΗΜΑ ΑΝΤΑΛΛΑΓΗΣ ΒΑΡΔΙΑΣ</span></h1>
+<div>
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="form-group">
+		    <label>Βάρδια προς ανταλλαγή</label>
+		  	<select id="shift" name="shift" class="form-control">
+		  		<option disabled selected value> -- Επιλέξτε την βάρδια σας που θέλετε να ανταλλάξετε με συνάδελφο -- </option>
+		    	<option value="1">Ημερομηνία: Δευ,28 Μαίου | Τύπος: Απογευματινή</option>
+		    	<option value="2">Ημερομηνία: Τρι,29 Μαίου | Τύπος: Βραδινή</option>
+		    	<option value="3">Ημερομηνία: Τετ,30 Μαίου | Τύπος: Απογευματινή</option>
+		    	<option value="4">Ημερομηνία: Πεμ,1 Ιουνίου | Τύπος: Πρωινή</option>
+		    	<option value="5">Ημερομηνία: Πεμ,1 Ιουνίου | Τύπος: Βραδινή</option>
+		    	<option value="6">Ημερομηνία: Παρ,28 Ιουνίου | Τύπος: Απογευματινή</option>
+		    	<option value="7">Ημερομηνία: Σαβ,28 Ιουνίου | Τύπος: Πρωινή</option>
+		    	<option value="8">Ημερομηνία: Κυρ,28 Ιουνίου | Τύπος: Βραδινή</option>
+		    </select>
+		    <p></p>
+		    <label>Επιθυμητή ημερομηνία νέας βάρδιας</label>
+		  	<select id="date" name="date" class="form-control">
+		  		<option disabled selected value> -- Επιλέξτε την ημερομηνία επιθυμητής βάρδιας -- </option>
+		  		<option value="1">Ημερομηνία: Δευ,28 Μαίου</option>
+		    	<option value="2">Ημερομηνία: Τρι,29 Μαίου</option>
+		    	<option value="3">Ημερομηνία: Τετ,30 Μαίου</option>
+		    	<option value="4">Ημερομηνία: Πεμ,1 Ιουνίου </option>
+		    	<option value="6">Ημερομηνία: Παρ,28 Ιουνίου</option>
+		    	<option value="7">Ημερομηνία: Σαβ,28 Ιουνίου</option>
+		    	<option value="8">Ημερομηνία: Κυρ,28 Ιουνίου</option>
+		    </select>
+		    <p></p>
+		    <label>Επιθυμητός τύπος νέας βάρδιας</label>
+		  	<select id="type" name="type" class="form-control">
+		  		<option disabled selected value> -- Επιλέξτε τον τύπο επιθυμητής βάρδιας -- </option>
+		  		<option value="1">Τύπος: Πρωινή</option>
+		    	<option value="2">Τύπος: Απογευματινή</option>
+		    	<option value="3">Τύπος: Βραδινή</option>
+		    </select>
+
+		    <p></p>
+		    <label>Διαθέσιμοι συνάδελφοι</label>
+		  	<select id="co-wo" name="co-wo" class="form-control">
+		  		<option disabled selected value> -- Επιλέξτε ένα διαθέσιμο συνάδελφο με τον οποίο επιθυμείτε να ανταλλάξετε βάρδιες -- </option>
+		  		<option value="1">Προμπονάς Η. </option>
+		    	<option value="2">Γρίβα Μ. </option>
+		    	<option value="3">Aθανασίου Β.</option>
+		    	<option value="4">Δρακόπουλος Σ.</option>
+		    	<option value="5">Ψαρόπουλος Ι.</option>
+		    	<option value="6">Καρανάσιος Κ.</option>
+		    	<option value="7">Ντάση Λ.</option>
+		    	<option value="8">Τζουλιαδάκης Ι.</option>
+		    	<option value="9">Κατσογιάννης Γ.</option>
+		    	<option value="10">Παπαδόπουλος Π.</option>
+		    </select>
+		    <p></p>
+		    <div class="col-sm-4"></div>
+		    <div class="col-sm-4">
+		    	<button type="submit" class="btn btn-default btn-sm"><i class="fas fa-sign-in-alt"></i>Αποστολή Αιτήματος</button>
+		    </div>
+		    <div class="col-sm-4"></div>
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
+
+<!--.....................................................foot...............................................................-->
+	<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h6>ΥΠΟΥΡΓΕΙΟ ΥΓΕΙΑΣ Copyright &copy; 2018 </h6>
+                </div>
+
+                <div class="col-sm-4">
+                    <h6>ΓΕΝΙΚΟ ΝΟΣΟΚΟΜΕΙΟ ΑΘΗΝΩΝ ΙΠΠΟΚΡΑΤΕΙΟ</h6>
+                </div>
+
+                <div class="col-sm-2">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Βοήθεια</a></li>
+                        <li><a href="#">Υπηρεσίες</a></li>
+                        <li><a href="#">Τεχνική Υποστήριξη</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-2">
+                    <h6>ΤΜΗΜΑ ΧΕΙΡΟΥΡΓΕΙΟΥ</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
