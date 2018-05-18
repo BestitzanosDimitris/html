@@ -58,7 +58,7 @@ html, body{
 
 /*...................................................................*/
 
-table.fixed {
+table {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 	height: 500px;
@@ -73,7 +73,7 @@ th {
     border: 2px solid;
     border-color: #E0E0E0;
     border-collapse: collapse;
-    padding: 20px 10px;
+    padding: 30px 20px;
 }
 td {
     text-align: center;
@@ -81,7 +81,7 @@ td {
     border: 1px solid;
     border-color: #E0E0E0;
     border-collapse: collapse;
-    padding: 20px 10px;
+    padding: 30px 20px;
 }
 .table-responsive{
 	border-radius: 10px;
